@@ -55,14 +55,14 @@ async function optimizeImages() {
     }
   }
 
-  // Replace original dir
-  const backupDir = './public/products_backup';
-  if (fs.existsSync(backupDir)) {
-    fs.rmSync(backupDir, { recursive: true, force: true });
+  // Overwrite original files
+  const tempFiles = fs.readdirSync(tempDir);
+  for (const file of tempFiles) {
+    const tempPath = path.join(tempDir, file);
+    const origPath = path.join(inputDir, file);
+    fs.copyFileSync(tempPath, origPath);
   }
-  fs.renameSync(inputDir, backupDir);
-  fs.renameSync(tempDir, inputDir);
-  fs.rmSync(backupDir, { recursive: true, force: true });
+  fs.rmSync(tempDir, { recursive: true, force: true });
 
   console.log('Image optimization complete. Original images backed up in products_backup.');
 }
