@@ -1,11 +1,44 @@
 import { useLanguage } from '../contexts/LanguageContext';
+import { useEffect, useRef } from 'react';
 
 const Hero3D = () => {
   const { t } = useLanguage();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.playbackRate = 0.3;
+    }
+  }, []);
 
   return (
     <section id="home" className="relative hero-section flex items-start md:items-center justify-center bg-black overflow-hidden pt-20 md:pt-0">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800" />
+      <video
+        className="absolute inset-0 w-full h-full object-cover hidden md:block will-change-auto"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+      >
+        <source src="/1210.webm" type="video/webm" />
+        <source src="/1210.mp4" type="video/mp4" />
+        <track kind="captions" />
+      </video>
+      <video
+        ref={videoRef}
+        className="absolute inset-0 w-full h-full object-cover md:hidden will-change-auto"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+      >
+        <source src="/1211.webm" type="video/webm" />
+        <source src="/1211.mp4" type="video/mp4" />
+        <track kind="captions" />
+      </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80" />
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
