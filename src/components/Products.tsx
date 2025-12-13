@@ -59,7 +59,7 @@ const Products = React.memo(() => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    loading={index === 0 ? "eager" : "lazy"}
+                    loading="eager"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className={`w-full h-full ${(product.id === 'l1-pro16' || product.id === 'l1pro8') ? 'object-contain' : 'object-cover'} transform group-hover:scale-110 transition-transform duration-700`}
                   />
