@@ -35,10 +35,8 @@ async function optimizeImages() {
       try {
         let pipeline = sharp(inputPath);
 
-        // Resize if too large
-        if (sizeKB > 500) {
-          pipeline = pipeline.resize(null, 800, { withoutEnlargement: true });
-        }
+        // Resize to appropriate web dimensions
+        pipeline = pipeline.resize(800, null, { withoutEnlargement: true });
 
         // Compress
         if (ext === '.webp') {
