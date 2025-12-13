@@ -17,6 +17,7 @@ export default defineConfig({
         },
       },
     },
+    cssCodeSplit: false, // Inline all CSS to avoid render-blocking
     chunkSizeWarningLimit: 1000,
   },
 });
