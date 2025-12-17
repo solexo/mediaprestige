@@ -51,16 +51,16 @@ const Home = () => {
             <div className="text-white">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-lg">
-                  <img src="/logos/bose.png" alt="Bose" className="h-16 w-auto" width="64" height="64" />
+                  <img src="/logos/bose.png" alt="Bose" className="h-16 w-auto" />
                 </div>
                 <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-lg">
-                  <img src="/logos/jbl.png" alt="JBL" className="h-16 w-auto" width="64" height="64" />
+                  <img src="/logos/jbl.png" alt="JBL" className="h-16 w-auto" />
                 </div>
                 <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-lg">
-                  <img src="/logos/sony.png" alt="Sony" className="h-16 w-auto" width="64" height="64" />
+                  <img src="/logos/sony.png" alt="Sony" className="h-16 w-auto" />
                 </div>
                 <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-lg">
-                  <img src="/logos/harman.png" alt="Harman" className="h-16 w-auto" width="64" height="64" />
+                  <img src="/logos/harman.png" alt="Harman" className="h-16 w-auto" />
                 </div>
               </div>
             </div>
