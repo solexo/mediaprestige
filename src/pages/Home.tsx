@@ -4,58 +4,19 @@ import Products from '../components/Products';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import AnimatedProductBar from '../components/AnimatedProductBar';
-import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Play } from 'lucide-react';
 
 const AnimationSection = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const { t } = useLanguage();
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    // video.playbackRate = 1; // normal speed
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const ratio = entry.intersectionRatio;
-          if (video) {
-            video.volume = ratio;
-            if (ratio > 0.5 && video.paused) {
-              video.play().catch(() => {});
-            }
-          }
-        });
-      },
-      { threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1] }
-    );
-
-    if (video) observer.observe(video);
-
-    return () => observer.disconnect();
-  }, []);
-
 
   return (
     <section className="md:hidden py-20 bg-black">
       <div className="max-w-4xl mx-auto px-4">
-        <video
-          ref={videoRef}
+        <img
+          src="/1212.gif"
           className="w-full h-auto rounded-lg"
-          loop
-          playsInline
-          autoPlay
-          muted
-          onPlay={() => setIsPlaying(true)}
-          onPause={() => setIsPlaying(false)}
-        >
-          <source src="/1212.webm" type="video/webm" />
-          <source src="/1212.mp4" type="video/mp4" />
-          <track kind="captions" />
-          Your browser does not support the video tag.
-        </video>
+          alt="animation"
+        />
       </div>
     </section>
   );
