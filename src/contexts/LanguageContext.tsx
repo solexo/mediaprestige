@@ -65,6 +65,7 @@ const translations = {
     expertiseList4: 'Solutions personnalisées pour tous vos besoins',
     partnerBrands: 'Marques Partenaires',
     backToHome: 'Retour à l\'accueil',
+    privacyNotice: 'Ce site ne suit pas les utilisateurs, ne collecte aucune donnée et assure la protection de votre vie privée.',
   },
   en: {
     home: 'Home',
@@ -122,6 +123,7 @@ const translations = {
     expertiseList4: 'Custom solutions for every need',
     partnerBrands: 'Partner Brands',
     backToHome: 'Back to Home',
+    privacyNotice: 'This site does not track users, collects no data, and ensures your privacy is protected.',
   },
 };
 
