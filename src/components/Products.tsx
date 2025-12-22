@@ -61,6 +61,8 @@ const Products = React.memo(() => {
                     alt={product.name}
                     loading="eager"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    width="665"
+                    height="565"
                     className={`w-full h-full ${(product.id === 'l1-pro16' || product.id === 'l1pro8') ? 'object-contain' : 'object-cover'} transform group-hover:scale-110 transition-transform duration-700`}
                   />
                 </Link>
