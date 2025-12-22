@@ -55,6 +55,12 @@ const Header = () => {
               {t('services')}
             </Link>
             <Link
+              to="/solutions"
+              className="text-white hover:text-yellow-400 transition-colors duration-200 font-orbitron font-medium tracking-wider"
+            >
+              {t('solutions')}
+            </Link>
+            <Link
               to="/about"
               className="text-white hover:text-yellow-400 transition-colors duration-200 font-orbitron font-medium tracking-wider"
             >
@@ -103,9 +109,8 @@ const Header = () => {
           </div>
         </div>
 
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-md rounded-lg mt-2 py-4 px-4 mb-4">
-            <nav className="flex flex-col space-y-4">
+        <div className={`md:hidden bg-black/95 backdrop-blur-md rounded-lg mt-2 py-4 px-4 mb-4 transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <nav className="flex flex-col space-y-4">
               <Link
                 to="/"
                 className="text-white hover:text-yellow-400 transition-colors duration-200 text-left font-orbitron font-medium tracking-wider"
@@ -125,6 +130,12 @@ const Header = () => {
                 {t('services')}
               </Link>
               <Link
+                to="/solutions"
+                className="text-white hover:text-yellow-400 transition-colors duration-200 text-left font-orbitron font-medium tracking-wider"
+              >
+                {t('solutions')}
+              </Link>
+              <Link
                 to="/about"
                 className="text-white hover:text-yellow-400 transition-colors duration-200 text-left font-orbitron font-medium tracking-wider"
               >
@@ -138,7 +149,6 @@ const Header = () => {
               </Link>
             </nav>
           </div>
-        )}
       </div>
     </header>
   );
