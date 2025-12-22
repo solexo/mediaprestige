@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://media-prestige.ma/sitemap.xml
+Sitemap: https://www.media-prestige.com/sitemap.xml
