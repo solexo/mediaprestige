@@ -50,6 +50,12 @@ const Header = () => {
               {t('products')}
             </Link>
             <Link
+              to="/categories"
+              className="text-black hover:text-yellow-400 transition-colors duration-200 font-orbitron font-medium tracking-wider"
+            >
+              {t('categories') || 'Catégories'}
+            </Link>
+            <Link
               to="/services"
               className="text-black hover:text-yellow-400 transition-colors duration-200 font-orbitron font-medium tracking-wider"
             >
@@ -123,6 +129,12 @@ const Header = () => {
                 className="text-black hover:text-yellow-400 transition-colors duration-200 text-left font-orbitron font-medium tracking-wider"
               >
                 {t('products')}
+              </Link>
+              <Link
+                to="/categories"
+                className="text-black hover:text-yellow-400 transition-colors duration-200 text-left font-orbitron font-medium tracking-wider"
+              >
+                {t('categories') || 'Catégories'}
               </Link>
               <Link
                 to="/services"

@@ -10,6 +10,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Products = lazy(() => import('./pages/Products'));
 const Services = lazy(() => import('./pages/Services'));
 const Solutions = lazy(() => import('./pages/Solutions'));
+const Categories = lazy(() => import('./pages/Categories'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail'));
 const ChatBot = lazy(() => import('./components/ChatBot'));
 
@@ -34,6 +35,7 @@ function App() {
               <Route path="/products/:id" element={<ProductDetail />} />
               <Route path="/services" element={<Services />} />
               <Route path="/solutions" element={<Solutions />} />
+              <Route path="/categories" element={<Categories />} />
             </Routes>
             <ChatBot />
           </Suspense>
