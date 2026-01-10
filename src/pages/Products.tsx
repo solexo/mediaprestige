@@ -80,7 +80,7 @@ const Products = React.memo(() => {
                         const encodedMessage = encodeURIComponent(message);
                         window.open(`https://wa.me/212600051612?text=${encodedMessage}`, '_blank');
                       }}
-                      className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-4 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 cursor-pointer"
+                      className="flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white px-4 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 cursor-pointer"
                     >
                       <ShoppingCart size={18} />
                       {t('buy')}

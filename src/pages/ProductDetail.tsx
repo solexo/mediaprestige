@@ -89,7 +89,7 @@ const ProductDetail = () => {
                         const encodedMessage = encodeURIComponent(message);
                         window.open(`https://wa.me/212600051612?text=${encodedMessage}`, '_blank');
                       }}
-                      className="flex-1 flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-8 py-5 rounded-2xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
+                      className="flex-1 flex items-center justify-center gap-3 bg-black hover:bg-gray-800 text-white px-8 py-5 rounded-2xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
                     >
                       <ShoppingCart size={24} />
                       {t('buy')}
