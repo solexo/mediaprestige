@@ -36,10 +36,10 @@ const Products = React.memo(() => {
   };
 
   return (
-    <section id="products" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section id="products" className="py-20 bg-gradient-to-b from-white via-gray-100 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-400">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-600">
             {t('productsTitle')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full" />
@@ -49,12 +49,20 @@ const Products = React.memo(() => {
           {products.map((product, index) => (
             <div
               key={product.id}
-              className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl hover:shadow-yellow-500/20 transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-gradient-to-br from-white via-gray-50 to-white backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 will-change-transform border border-gray-200/50 overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/0 to-yellow-600/0 group-hover:from-yellow-400/10 group-hover:to-yellow-600/10 transition-all duration-500 pointer-events-none" />
+              {/* Decorative gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/5 via-transparent to-blue-400/5 group-hover:from-yellow-400/10 group-hover:to-blue-400/10 transition-all duration-500 pointer-events-none" />
 
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                {/* Floating badge */}
+                <div className="absolute top-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                    PRO
+                  </div>
+                </div>
+
                 <Link to={`/products/${product.id}`}>
                   <img
                     src={product.image}
@@ -63,14 +71,17 @@ const Products = React.memo(() => {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     width="665"
                     height="565"
-                    className={`w-full h-full ${(product.id === 'l1-pro16' || product.id === 'l1pro8') ? 'object-contain' : 'object-cover'} transform group-hover:scale-110 transition-transform duration-700`}
+                    className="w-full h-full object-contain p-6 transform group-hover:scale-110 transition-transform duration-700"
                   />
                 </Link>
+
+                {/* Subtle shadow effect */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none" />
               </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">{product.name}</h3>
-                <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+              <div className="p-6 relative z-10">
+                <h3 className="text-xl font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors duration-300">{product.name}</h3>
+                <p className="text-gray-600 mb-6 text-sm leading-relaxed line-clamp-3">
                   {language === 'fr' ? product.descriptionFr : product.descriptionEn}
                 </p>
 
@@ -81,9 +92,9 @@ const Products = React.memo(() => {
                       const encodedMessage = encodeURIComponent(message);
                       window.open(`https://wa.me/212600051612?text=${encodedMessage}`, '_blank');
                     }}
-                    className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50 cursor-pointer"
+                    className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-4 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 cursor-pointer"
                   >
-                    <Play size={18} />
+                    <ShoppingCart size={18} />
                     {t('buy')}
                   </button>
 
@@ -93,9 +104,9 @@ const Products = React.memo(() => {
                       const encodedMessage = encodeURIComponent(message);
                       window.open(`https://wa.me/212600051612?text=${encodedMessage}`, '_blank');
                     }}
-                    className="flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/50 cursor-pointer"
+                    className="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-black px-4 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 hover:border-yellow-400 transform hover:-translate-y-1 cursor-pointer"
                   >
-                    <Play size={18} />
+                    <MessageCircle size={18} />
                     {t('quote')}
                   </button>
                 </div>

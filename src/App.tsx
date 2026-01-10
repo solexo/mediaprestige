@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { LanguageProvider } from './contexts/LanguageContext';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 // Lazy load components
 const Home = lazy(() => import('./pages/Home'));
@@ -21,22 +22,24 @@ const LoadingSpinner = () => (
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
-        <Suspense fallback={<LoadingSpinner />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/:id" element={<ProductDetail />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/solutions" element={<Solutions />} />
-          </Routes>
-          <ChatBot />
-        </Suspense>
-      </Router>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <Router>
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/solutions" element={<Solutions />} />
+            </Routes>
+            <ChatBot />
+          </Suspense>
+        </Router>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

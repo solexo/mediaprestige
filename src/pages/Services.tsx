@@ -46,9 +46,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <Header />
-      <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black pt-32 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-b from-white via-gray-100 to-white pt-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-400 rounded-full filter blur-3xl animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-600 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -56,7 +56,7 @@ const Services = () => {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-400">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-600">
               {t('servicesTitle')}
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full" />
@@ -68,7 +68,7 @@ const Services = () => {
               return (
                 <div
                   key={index}
-                  className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-yellow-400/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/20"
+                  className="group relative bg-gradient-to-br from-white via-gray-50 to-white backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 hover:border-yellow-400/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/20"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/0 to-yellow-600/0 group-hover:from-yellow-400/5 group-hover:to-yellow-600/5 rounded-2xl transition-all duration-500" />
 
@@ -77,11 +77,11 @@ const Services = () => {
                       <Icon size={32} className="text-black" />
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-4">
+                    <h3 className="text-xl font-bold text-black mb-4">
                       {t(service.titleKey)}
                     </h3>
 
-                    <p className="text-gray-400 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed">
                       {t(service.descKey)}
                     </p>
                   </div>

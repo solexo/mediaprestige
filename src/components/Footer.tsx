@@ -6,19 +6,19 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-black border-t border-gray-800 py-12">
+    <footer className="bg-white border-t border-gray-200 py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="text-center md:text-left">
             <Logo className="mb-4 mx-auto md:mx-0" />
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-600 text-sm">
               {t('aboutDesc')}
             </p>
           </div>
 
           <div className="text-center md:text-left">
-            <h3 className="text-white font-bold mb-4">{t('contact')}</h3>
-            <div className="space-y-2 text-sm text-gray-400">
+            <h3 className="text-black font-bold mb-4">{t('contact')}</h3>
+            <div className="space-y-2 text-sm text-gray-600">
               <div className="flex items-center justify-center md:justify-start gap-2">
                 <Phone size={16} />
                 <a href="tel:+212600051612" className="hover:text-yellow-400 transition-colors">+212 600 051 612</a>
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <h3 className="text-white font-bold mb-4">{t('followUs')}</h3>
+            <h3 className="text-black font-bold mb-4">{t('followUs')}</h3>
             <div className="flex justify-center md:justify-start gap-4">
               <a
                 href="https://www.instagram.com/mediaprestige.official?igsh=MW9zczh0aHczMHFzZw=="
@@ -59,11 +59,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center space-y-2">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-gray-200 pt-8 text-center space-y-2">
+          <p className="text-gray-600 text-sm">
             {t('privacyNotice')}
           </p>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-600 text-sm">
             {t('footerText')}
           </p>
         </div>
