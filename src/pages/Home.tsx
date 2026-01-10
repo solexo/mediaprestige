@@ -5,6 +5,8 @@ import Services from '../components/Services';
 import Footer from '../components/Footer';
 import AnimatedProductBar from '../components/AnimatedProductBar';
 import { useLanguage } from '../contexts/LanguageContext';
+import { categories } from '../data/categories';
+import { Link } from 'react-router-dom';
 
 const AnimationSection = () => {
   const { t } = useLanguage();
@@ -23,7 +25,7 @@ const AnimationSection = () => {
 };
 
 const Home = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   return (
     <div className="min-h-screen bg-black">
       <Header />
@@ -39,22 +41,16 @@ const Home = () => {
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-600 mb-4 font-orbitron">Nos Solutions</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Our Categories</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              'Sonorisation de Villa',
-              'Cafés et Restaurants',
-              'Commerce et Showrooms',
-              'Salles de Réunions',
-              'Hôtels',
-              'Maisons d\'Hôte'
-            ].map((solution, index) => (
-              <div
-                key={index}
-                className="group relative bg-gradient-to-br from-white via-gray-50 to-white backdrop-blur-xl rounded-2xl p-8 border border-gray-200/50 hover:border-yellow-400/60 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-yellow-400/30 overflow-hidden"
+            {categories.map((category, index) => (
+              <Link
+                key={category.id}
+                to={`/categories`}
+                className="group relative bg-gradient-to-br from-white via-gray-50 to-white backdrop-blur-xl rounded-2xl p-8 border border-gray-200/50 hover:border-yellow-400/60 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-yellow-400/30 overflow-hidden block"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Decorative gradient overlay */}
@@ -66,13 +62,13 @@ const Home = () => {
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-black mb-4 font-orbitron group-hover:text-yellow-600 transition-colors duration-300">{solution}</h3>
+                  <h3 className="text-xl font-bold text-black mb-4 font-orbitron group-hover:text-yellow-600 transition-colors duration-300">{language === 'fr' ? category.nameFr : category.nameEn}</h3>
                   <div className="w-12 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
                 {/* Corner accent */}
                 <div className="absolute top-0 right-0 w-16 h-16 bg-yellow-400/10 rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
+              </Link>
             ))}
           </div>
         </div>
