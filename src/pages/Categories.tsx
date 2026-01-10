@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Home, Users, Coffee, ShoppingBag, Bed } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { categories } from '../data/categories';
 import Header from '../components/Header';
@@ -9,26 +8,14 @@ import Footer from '../components/Footer';
 const Categories = React.memo(() => {
   const { language, t } = useLanguage();
 
-  const getCategoryIcon = (categoryId: string) => {
-    const iconMap: { [key: string]: React.ComponentType<any> } = {
-      hotels: Building,
-      villas: Home,
-      'conference-rooms': Users,
-      'restaurants-cafes': Coffee,
-      'showrooms-retail': ShoppingBag,
-      guesthouses: Bed
-    };
-    return iconMap[categoryId] || Building;
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <section className="py-20 bg-gradient-to-b from-white via-gray-100 to-white pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-600">
-              {t('categoriesTitle') || 'Nos Catégories'}
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
+              Categories
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full" />
             <p className="text-gray-600 mt-6 text-lg max-w-2xl mx-auto">
@@ -41,7 +28,6 @@ const Categories = React.memo(() => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category, index) => {
-              const IconComponent = getCategoryIcon(category.id);
               return (
                 <div
                   key={category.id}
@@ -52,13 +38,6 @@ const Categories = React.memo(() => {
                   <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/5 via-transparent to-blue-400/5 group-hover:from-yellow-400/10 group-hover:to-blue-400/10 transition-all duration-500 pointer-events-none" />
 
                   <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-                    {/* Category icon badge */}
-                    <div className="absolute top-4 left-4 z-20">
-                      <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center shadow-lg">
-                        <IconComponent size={24} className="text-black" />
-                      </div>
-                    </div>
-
                     <img
                       src={category.image}
                       alt={language === 'fr' ? category.nameFr : category.nameEn}
@@ -94,13 +73,6 @@ const Categories = React.memo(() => {
                         ))}
                       </div>
                     </div>
-
-                    <Link
-                      to={`/categories/${category.id}`}
-                      className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
-                    >
-                      {language === 'fr' ? 'En savoir plus' : 'Learn More'}
-                    </Link>
                   </div>
                 </div>
               );
