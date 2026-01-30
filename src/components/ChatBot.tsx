@@ -202,22 +202,22 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 h-96 bg-black/95 backdrop-blur-md rounded-2xl shadow-2xl border border-yellow-400/20 z-50 flex flex-col">
+        <div className="fixed bottom-24 right-6 w-80 h-96 bg-white backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 z-50 flex flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-teal-400/20">
+          <div className="flex items-center justify-between p-4 border-b border-gray-200">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-teal-400 rounded-full flex items-center justify-center">
                 <span className="text-black font-bold text-sm">MP</span>
               </div>
               <div>
-                <h3 className="text-white font-semibold text-sm">Media Prestige</h3>
-                <p className="text-gray-400 text-xs">Assistant virtuel</p>
+                <h3 className="text-black font-semibold text-sm">Media Prestige</h3>
+                <p className="text-gray-600 text-xs">Assistant virtuel</p>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
               aria-label="Close chat"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-600 hover:text-black transition-colors"
             >
               <X size={20} />
             </button>

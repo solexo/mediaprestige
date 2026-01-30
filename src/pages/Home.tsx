@@ -45,7 +45,7 @@ const Home = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category, index) => (
               <Link
                 key={category.id}
@@ -92,7 +92,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="text-black">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-6">
                 <div className="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-lg border border-gray-200">
                   <img src="/logos/bose.png" alt="Bose" className="h-16 w-auto" />
                 </div>
@@ -104,6 +104,9 @@ const Home = () => {
                 </div>
                 <div className="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-lg border border-gray-200">
                   <img src="/logos/harman.png" alt="Harman" className="h-16 w-auto object-contain" />
+                </div>
+                <div className="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-lg border border-gray-200">
+                  <img src="/logos/dolbyatmos.gif" alt="Dolby Atmos" className="h-16 w-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -122,10 +125,8 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
-              <div className="text-teal-400 mb-6">
-                <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
+              <div className="text-teal-400 mb-6 flex items-center justify-center">
+                <img src="/logos/ttenun.jpg" alt="Bundles Complets" className="h-16 w-auto object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Bundles Complets</h3>
               <p className="text-gray-600 mb-6">Solutions tout-en-un pour sonorisation domestique avec amplificateurs, enceintes et caissons intégrés.</p>
@@ -138,10 +139,8 @@ const Home = () => {
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
-              <div className="text-teal-400 mb-6">
-                <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 3v3a2 2 0 0 1-2 2H3v11a2 2 0 0 0 2 2h5.5l-1-1H5V8h3a2 2 0 0 0 2-2V5h6v2a2 2 0 0 0 2 2h3v11h-2.5l-1 1H19a2 2 0 0 0 2-2V8a2 2 0 0 0 2-2V3H8z"/>
-                </svg>
+              <div className="text-teal-400 mb-6 flex items-center justify-center">
+                <img src="/logos/dolbyatmos.gif" alt="Dolby Atmos" className="h-16 w-auto object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Home Cinéma</h3>
               <p className="text-gray-600 mb-6">Systèmes de home cinéma immersifs avec Dolby Atmos pour une expérience cinématographique exceptionnelle.</p>
@@ -154,10 +153,8 @@ const Home = () => {
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
-              <div className="text-teal-400 mb-6">
-                <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
+              <div className="text-teal-400 mb-6 flex items-center justify-center">
+                <img src="/logos/hometheater.jpg" alt="Home Theater" className="h-16 w-auto object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Home Theater</h3>
               <p className="text-gray-600 mb-6">Configurations avancées pour théâtres domestiques avec équipements professionnels et acoustique optimisée.</p>

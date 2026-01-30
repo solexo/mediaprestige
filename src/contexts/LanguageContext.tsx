@@ -18,7 +18,7 @@ const translations = {
     about: 'À Propos',
     contact: 'Contact',
     heroTitle: 'MEDIA PRESTIGE',
-    heroSubtitle: 'Importateur et Distributeur de Matériel de Sonorisation et Audiovisuel Haut de Gamme',
+    heroSubtitle: '',
     heroDescription: '',
     viewProducts: 'Voir les produits',
     requestQuote: 'Demander un devis',

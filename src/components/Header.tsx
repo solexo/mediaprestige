@@ -9,6 +9,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+  const textColor = isScrolled ? 'text-black' : 'text-white';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,8 +34,8 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <Logo className="cursor-pointer" />
+        <div className="flex items-center justify-between h-20 md:h-28">
+          <Logo className="cursor-pointer" textColor={textColor} />
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
