@@ -94,11 +94,11 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 font-orbitron">{t('expertiseTitle')}</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-black">Importation et Distribution</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-black font-orbitron">Importation et Distribution</h3>
               <p className="text-gray-700 mb-6">
                 Spécialiste de l’importation et de la distribution de solutions audiovisuelles haut de gamme, MEDIA PRESTIGE propose aux professionnels des équipements sélectionnés avec rigueur auprès de marques internationales de référence.
               </p>
-              <h2 className="text-2xl font-semibold mb-6 text-black">Savoir-faire et engagement</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-black font-orbitron">Savoir-faire et engagement</h2>
                 <p className="text-gray-700 mb-6">
                 Forts de plusieurs années d’expérience, nous sélectionnons avec exigence des équipements de référence, en garantissant un équilibre optimal entre performance, fiabilité et compétitivité.
               </p>
@@ -155,7 +155,7 @@ const Home = () => {
           </div>
 
           <div className="mt-16">
-            <h3 className="text-2xl font-bold text-left text-black mb-8">Partenaires Validés</h3>
+            <h3 className="text-2xl font-bold text-left text-black mb-8 font-orbitron">Partenaires Validés</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
                 <div className="text-teal-400 mb-4">
