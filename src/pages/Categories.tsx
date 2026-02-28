@@ -14,7 +14,7 @@ const Categories = React.memo(() => {
       <section className="py-20 bg-gradient-to-b from-white via-gray-100 to-white pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black font-orbitron">
               Adapter à vos projets
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full" />
@@ -53,7 +53,7 @@ const Categories = React.memo(() => {
                   </div>
 
                   <div className="p-6 relative z-10">
-                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors duration-300 font-orbitron">
                       {language === 'fr' ? category.nameFr : category.nameEn}
                     </h3>
                     <p className="text-gray-600 mb-4 text-sm leading-relaxed">

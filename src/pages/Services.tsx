@@ -11,7 +11,7 @@ const ServicesPage = () => {
       <Header />
       <main className="pt-20">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 font-orbitron">
             {t('servicesTitle')}
           </h1>
           <Services />

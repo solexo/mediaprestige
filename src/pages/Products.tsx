@@ -30,7 +30,7 @@ const Products = React.memo(() => {
       <section className="py-20 bg-gradient-to-b from-white via-gray-100 to-white pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black font-orbitron">
               {t('productsTitle')}
             </h1>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">

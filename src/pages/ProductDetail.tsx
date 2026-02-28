@@ -54,7 +54,7 @@ const ProductDetail = () => {
               <div className="md:w-1/2 p-10 lg:p-12">
                 <div className="space-y-6">
                   <div>
-                    <h1 className="text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{product.name}</h1>
+                    <h1 className="text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight font-orbitron">{product.name}</h1>
                     <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full" />
                   </div>
 

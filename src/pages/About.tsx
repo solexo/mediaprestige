@@ -19,7 +19,7 @@ const About = () => {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black font-orbitron">
               {t('aboutTitle')}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full" />
