@@ -39,7 +39,7 @@ const Products = React.memo(() => {
     <section id="products" className="py-20 bg-gradient-to-b from-white via-gray-100 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-teal-600">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-black to-teal-600 font-orbitron">
             {t('productsTitle')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 rounded-full" />

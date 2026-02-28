@@ -91,7 +91,7 @@ const Home = () => {
       {/* Importation et Distribution Section */}
       <section className="py-16 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12">{t('expertiseTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 font-orbitron">{t('expertiseTitle')}</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-black">Importation et Distribution</h3>
