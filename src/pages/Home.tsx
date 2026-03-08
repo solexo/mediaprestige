@@ -37,7 +37,7 @@ const Home = () => {
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Adapter à vos projets</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Adapté à vos projets</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
           </div>
 
