@@ -39,6 +39,23 @@ const Products = React.memo(() => {
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full mt-6" />
           </div>
 
+          {/* Product Categories */}
+          <div className="mb-12">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {[
+                { fr: 'Enceinte Murale', en: 'Wall Speaker' },
+                { fr: 'Encastrable', en: 'In-Wall' },
+                { fr: 'Plafonnier', en: 'Ceiling Speaker' },
+                { fr: 'Caisson de Basse', en: 'Subwoofer' },
+                { fr: 'Amplificateur', en: 'Amplifier' }
+              ].map((category, idx) => (
+                <div key={idx} className="bg-gradient-to-br from-gray-50 to-white p-4 rounded-xl border border-gray-200 text-center hover:shadow-lg transition-shadow">
+                  <span className="text-black font-semibold">{language === 'fr' ? category.fr : category.en}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product, index) => (
               <div
