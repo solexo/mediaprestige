@@ -54,7 +54,7 @@ const Header = () => {
               to="/categories"
               className="text-black hover:text-yellow-400 transition-colors duration-200 font-orbitron font-medium tracking-wider"
             >
-              {t('categories') || 'Catégories'}
+              {t('categories') || 'Adapté à vos projets'}
             </Link>
             <Link
               to="/solutions"
@@ -129,7 +129,7 @@ const Header = () => {
                 to="/categories"
                 className="text-black hover:text-yellow-400 transition-colors duration-200 text-left font-orbitron font-medium tracking-wider"
               >
-                {t('categories') || 'Catégories'}
+                {t('categories') || 'Adapté à vos projets'}
               </Link>
               <Link
                 to="/solutions"
