@@ -17,9 +17,9 @@ const Home = () => {
       {/* Solutions Particulier Section - Animated */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-left mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-left text-black mb-4 font-orbitron">Solutions complètes</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 rounded-full" />
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Solutions complètes</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
             <p className="text-gray-600 mt-4 max-w-2xl">Découvrez nos solutions complètes pour votre domicile : bundles, home cinéma et home theater avec spécifications techniques détaillées.</p>
           </div>
 
@@ -36,9 +36,9 @@ const Home = () => {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
-          <div className="text-left mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-left text-black mb-4 font-orbitron">Adapter à vos projets</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 rounded-full" />
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Adapter à vos projets</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -89,16 +89,16 @@ const Home = () => {
       </section>
 
       {/* Importation et Distribution Section */}
-      <section className="py-16 bg-white text-left">
+      <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 font-orbitron">{t('expertiseTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-12 font-orbitron">{t('expertiseTitle')}</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-black font-orbitron">Importation et Distribution</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-black text-center font-orbitron">Importation et Distribution</h3>
               <p className="text-gray-700 mb-6">
                 Spécialiste de l’importation et de la distribution de solutions audiovisuelles haut de gamme, MEDIA PRESTIGE propose aux professionnels des équipements sélectionnés avec rigueur auprès de marques internationales de référence.
               </p>
-              <h2 className="text-2xl font-semibold mb-6 text-black font-orbitron">Savoir-faire et engagement</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-black text-center font-orbitron">Savoir-faire et engagement</h2>
                 <p className="text-gray-700 mb-6">
                 Forts de plusieurs années d’expérience, nous sélectionnons avec exigence des équipements de référence, en garantissant un équilibre optimal entre performance, fiabilité et compétitivité.
               </p>
@@ -135,13 +135,13 @@ const Home = () => {
       {/* Partnerships Section */}
       <section className="py-20 bg-gradient-to-b from-teal-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-left mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-left text-black mb-4 font-orbitron">Partenariats</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 rounded-full" />
-            <p className="text-gray-600 mt-4 max-w-2xl">Rejoignez notre réseau de partenaires : commerciaux freelances, architectes, paysagistes et professionnels du secteur.</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Partenariats</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Rejoignez notre réseau de partenaires : commerciaux freelances, architectes, paysagistes et professionnels du secteur.</p>
           </div>
 
-          <div className="text-left">
+          <div className="text-center">
             <button
               onClick={() => {
                 const message = "Bonjour, je suis intéressé par un partenariat avec Media Prestige. Pouvez-vous m'envoyer plus d'informations ?";
@@ -155,7 +155,7 @@ const Home = () => {
           </div>
 
           <div className="mt-16">
-            <h3 className="text-2xl font-bold text-left text-black mb-8 font-orbitron">Partenaires Validés</h3>
+            <h3 className="text-2xl font-bold text-center text-black mb-8 font-orbitron">Partenaires Validés</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
                 <div className="text-teal-400 mb-4">

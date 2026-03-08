@@ -56,8 +56,8 @@ const SolutionsCarousel = () => {
               : 'opacity-100 translate-x-0 scale-100'
           }`}
         >
-          <div className="text-left">
-            <div className="mb-6 flex items-center justify-start">
+          <div className="text-center">
+            <div className="mb-6 flex items-center justify-center">
               <img 
                 src={currentSolution.logo} 
                 alt={currentSolution.logoAlt} 
@@ -65,11 +65,11 @@ const SolutionsCarousel = () => {
               />
             </div>
             <h3 className="text-3xl font-bold text-black mb-4 font-orbitron">{currentSolution.title}</h3>
-            <p className="text-gray-600 mb-6 max-w-xl">{currentSolution.description}</p>
-            <ul className="space-y-2 text-sm text-gray-700 max-w-lg">
+            <p className="text-gray-600 mb-6 max-w-xl mx-auto">{currentSolution.description}</p>
+            <ul className="space-y-2 text-sm text-gray-700 max-w-lg mx-auto">
               {currentSolution.features.map((feature, idx) => (
-                <li key={idx} className="flex items-start">
-                  <span className="w-2 h-2 bg-teal-400 rounded-full mr-2 mt-1.5" />
+                <li key={idx} className="flex items-center justify-center">
+                  <span className="w-2 h-2 bg-teal-400 rounded-full mr-2" />
                   {feature}
                 </li>
               ))}
