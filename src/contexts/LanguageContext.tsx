@@ -12,7 +12,7 @@ const translations = {
   fr: {
     home: 'Accueil',
     products: 'Produits',
-    categories: 'Nos produits conçu pour vous',
+    categories: 'Adapté à vos projets',
     services: 'Services',
     solutions: 'Partenariat',
     installer: 'Installateur',
@@ -73,7 +73,7 @@ const translations = {
   en: {
     home: 'Home',
     products: 'Products',
-    categories: 'Our products are designed for you.',
+    categories: 'Adapted to your projects',
     services: 'Services',
     solutions: 'Solutions',
     installer: 'Installers',
