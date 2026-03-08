@@ -71,7 +71,12 @@ const Products = React.memo(() => {
                 </div>
 
                 <div className="p-6 relative z-10">
-                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-teal-600 transition-colors duration-300">{product.name}</h3>
+                  <h3 className="text-xl font-bold text-black mb-2 group-hover:text-teal-600 transition-colors duration-300">{product.name}</h3>
+                  {product.typeFr && (
+                    <div className="text-teal-600 font-semibold text-xs mb-2">
+                      {language === 'fr' ? product.typeFr : product.type}
+                    </div>
+                  )}
                   <p className="text-gray-600 mb-6 text-sm leading-relaxed line-clamp-3">
                     {language === 'fr' ? product.descriptionFr : product.descriptionEn}
                   </p>

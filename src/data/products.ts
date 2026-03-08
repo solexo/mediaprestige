@@ -6,6 +6,8 @@ export interface Product {
   descriptionFr: string;
   descriptionEn: string;
   image: string;
+  type?: string;
+  typeFr?: string;
 }
 
 export const products: Product[] = [
@@ -15,6 +17,8 @@ export const products: Product[] = [
     descriptionFr: 'Système de sonorisation portable Bose L1 Pro8 pour musiciens et événements',
     descriptionEn: 'Bose L1 Pro8 portable sound system for musicians and events',
     image: '/products/L1pro8.webp',
+    type: 'Portable System',
+    typeFr: 'Système Portable',
   },
   {
     id: 'l1-pro16',
@@ -22,6 +26,8 @@ export const products: Product[] = [
     descriptionFr: 'Système Bose L1 Pro16 pour performances exceptionnelles',
     descriptionEn: 'Bose L1 Pro16 system for exceptional performances',
     image: '/products/L1_Pro16.webp',
+    type: 'Portable System',
+    typeFr: 'Système Portable',
   },
   {
     id: 'smart-ultra-soundbar',
@@ -29,6 +35,8 @@ export const products: Product[] = [
     descriptionFr: 'Barre de son Bose Smart Ultra avec Dolby Atmos',
     descriptionEn: 'Bose Smart Ultra soundbar with Dolby Atmos',
     image: '/products/Smart Ultra Soundbar.webp',
+    type: 'Soundbar',
+    typeFr: 'Barre de Son',
   },
   {
     id: 'smart-ultra-caisson-700',
@@ -36,6 +44,8 @@ export const products: Product[] = [
     descriptionFr: 'Caisson Bose Smart Ultra 700 sans fil haute performance',
     descriptionEn: 'Bose Smart Ultra 700 wireless high-performance subwoofer',
     image: '/products/Smart Ultra Caisson 700.webp',
+    type: 'Subwoofer',
+    typeFr: 'Caisson de Basse',
   },
   {
     id: 'caisson-de-bass-acoustimass3',
@@ -43,6 +53,8 @@ export const products: Product[] = [
     descriptionFr: 'Module de basses Bose Acoustimass 3 pour home cinéma',
     descriptionEn: 'Bose Acoustimass 3 bass module for home theater',
     image: '/products/Caisson de Bass Acoustimass3.webp',
+    type: 'Subwoofer',
+    typeFr: 'Caisson de Basse',
   },
   {
     id: 'iza2120',
@@ -50,6 +62,8 @@ export const products: Product[] = [
     descriptionFr: 'Amplificateur Bose IZA 2120-HZ 2x120W professionnel',
     descriptionEn: 'Bose IZA 2120-HZ professional 2x120W amplifier',
     image: '/products/IZA2120.webp',
+    type: 'Amplifier',
+    typeFr: 'Amplificateur',
   },
   {
     id: 'za250',
@@ -57,6 +71,8 @@ export const products: Product[] = [
     descriptionFr: 'Amplificateur Bose ZA 250-LA avec DSP intégré',
     descriptionEn: 'Bose ZA 250-LA amplifier with integrated DSP',
     image: '/products/ZA250.webp',
+    type: 'Amplifier',
+    typeFr: 'Amplificateur',
   },
   {
     id: 'dm8c-flush',
@@ -64,6 +80,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose DM8C d\'encastrément pour plafond',
     descriptionEn: 'Bose DM8C flush ceiling speakers',
     image: '/products/DM8C_Flush.webp',
+    type: 'Ceiling Speaker',
+    typeFr: 'Plafonnier',
   },
   {
     id: '251',
@@ -71,6 +89,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose 251 environnementaux',
     descriptionEn: 'Bose 251 environmental speakers',
     image: '/products/251.webp',
+    type: 'Wall Speaker',
+    typeFr: 'Murale',
   },
   {
     id: '360p-ec',
@@ -78,6 +98,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose 360P EC environnementaux 360 degrés',
     descriptionEn: 'Bose 360P EC 360-degree environmental speakers',
     image: '/products/360P_EC.webp',
+    type: 'Pool Speaker',
+    typeFr: 'Piscine',
   },
   {
     id: 'bose-music-amplifier',
@@ -85,6 +107,8 @@ export const products: Product[] = [
     descriptionFr: 'Amplificateur Bose Music pour installations audio',
     descriptionEn: 'Bose Music Amplifier for audio installations',
     image: '/products/Bose Music Amplifier.webp',
+    type: 'Amplifier',
+    typeFr: 'Amplificateur',
   },
   {
     id: 'dm2c',
@@ -92,6 +116,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose DM2C de plafond 2 voies',
     descriptionEn: 'Bose DM2C 2-way ceiling speakers',
     image: '/products/DM2C.webp',
+    type: 'Ceiling Speaker',
+    typeFr: 'Plafonnier',
   },
   {
     id: 'dm3-flush',
@@ -99,6 +125,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose DM3 d\'encastrément 3 voies',
     descriptionEn: 'Bose DM3 3-way flush speakers',
     image: '/products/DM3_Flush.webp',
+    type: 'In-Wall',
+    typeFr: 'Encastrable',
   },
   {
     id: 'dm5-flush',
@@ -106,6 +134,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose DM5 d\'encastrément 5 pouces',
     descriptionEn: 'Bose DM5 5-inch flush speakers',
     image: '/products/DM5_Flush.webp',
+    type: 'In-Wall',
+    typeFr: 'Encastrable',
   },
   {
     id: 'smart-sound-bar',
@@ -113,6 +143,8 @@ export const products: Product[] = [
     descriptionFr: 'Barre de son Bose Smart avec connectivité multi-room',
     descriptionEn: 'Bose Smart soundbar with multi-room connectivity',
     image: '/products/Smart Sound Bar.webp',
+    type: 'Soundbar',
+    typeFr: 'Barre de Son',
   },
   {
     id: 'fs2c',
@@ -120,6 +152,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose FS2C de surface 2 voies',
     descriptionEn: 'Bose FS2C 2-way surface speakers',
     image: '/products/FS2C.webp',
+    type: 'Wall Speaker',
+    typeFr: 'Murale',
   },
   {
     id: 'satellite-flush',
@@ -127,6 +161,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs satellites Bose d\'encastrément',
     descriptionEn: 'Bose flush satellite speakers',
     image: '/products/Satellite_flush.webp',
+    type: 'In-Wall',
+    typeFr: 'Encastrable',
   },
   {
     id: 'caisson-de-bass-flush',
@@ -134,6 +170,8 @@ export const products: Product[] = [
     descriptionFr: 'Caisson de basses Bose d\'encastrément',
     descriptionEn: 'Bose flush bass module',
     image: '/products/Caisson de bass flush.webp',
+    type: 'Subwoofer',
+    typeFr: 'Caisson de Basse',
   },
   {
     id: 'fs2se',
@@ -141,6 +179,8 @@ export const products: Product[] = [
     descriptionFr: 'Haut-parleurs Bose FS2SE environnementaux',
     descriptionEn: 'Bose FS2SE environmental speakers',
     image: '/products/FS2SE.webp',
+    type: 'Wall Speaker',
+    typeFr: 'Murale',
   },
   {
     id: 'acoustimass',
@@ -148,5 +188,7 @@ export const products: Product[] = [
     descriptionFr: 'Module de basses Bose Acoustimass pour systèmes audio',
     descriptionEn: 'Bose Acoustimass bass module for audio systems',
     image: '/products/Acoustimass.webp',
+    type: 'Subwoofer',
+    typeFr: 'Caisson de Basse',
   },
 ];
