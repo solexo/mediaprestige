@@ -15,7 +15,7 @@ const Categories = React.memo(() => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black font-orbitron">
-              Adapter à vos projets
+              Adapté à vos projets
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full" />
             <p className="text-gray-600 mt-6 text-lg max-w-2xl mx-auto">
