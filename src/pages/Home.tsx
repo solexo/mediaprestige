@@ -2,17 +2,39 @@ import Header from '../components/Header';
 import Hero3D from '../components/Hero3D';
 import Products from '../components/Products';
 import Footer from '../components/Footer';
+import AnimatedProductBar from '../components/AnimatedProductBar';
 import { useLanguage } from '../contexts/LanguageContext';
 import { categories } from '../data/categories';
 import SolutionsCarousel from '../components/SolutionsCarousel';
+import { Link } from 'react-router-dom';
+
+const AnimationSection = () => {
+  const { t } = useLanguage();
+
+  return (
+    <section className="md:hidden py-20 bg-white">
+      <div className="max-w-4xl mx-auto px-4">
+        <img
+          src="/1212.gif"
+          className="w-full h-auto rounded-lg"
+          alt="animation"
+        />
+      </div>
+    </section>
+  );
+};
 
 const Home = () => {
   const { language, t } = useLanguage();
   return (
     <div className="min-h-screen bg-black">
       <Header />
+
       <Hero3D />
       <Products />
+      <AnimatedProductBar />
+      
+      <AnimationSection />
       
       {/* Solutions Particulier Section - Animated */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -20,7 +42,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Solutions complètes</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
-            <p className="text-gray-600 mt-4 max-w-2xl">Découvrez nos solutions complètes pour votre domicile : bundles, home cinéma et home theater avec spécifications techniques détaillées.</p>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Découvrez nos solutions complètes pour votre domicile : bundles, home cinéma et home theater avec spécifications techniques détaillées.</p>
           </div>
 
           <SolutionsCarousel />
