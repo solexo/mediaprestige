@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA PRESTIGE - Flyer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+
+        .flyer-container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 50px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .yellow-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        }
+
+        .black-text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .service-item {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        @media print {
+            .flyer-container {
+                width: 100%;
+                height: auto;
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="flyer-container">
+        <!-- Header with Logo -->
+        <div class="yellow-gradient p-8 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <img src="/logos/logo.webp" alt="Media Prestige Logo" class="h-32 w-auto">
+            </div>
+            <p class="text-xl text-black font-semibold">Solutions Audio Professionnelles Haut de Gamme</p>
+            <p class="text-black text-sm mt-2">Pionnier de l'avenir de la technologie avec des solutions de pointe</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-6">
+            <!-- Services Section -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Nos Services</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="service-item">Installation Audio Professionnelle</div>
+                    <div class="service-item">Événementiel</div>
+                    <div class="service-item">Location de Matériel</div>
+                    <div class="service-item">Maintenance & Optimisation</div>
+                    <div class="service-item">Services de Conférence</div>
+                    <div class="service-item">Événements Majeurs</div>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Notre Sélection de Produits Premium</h2>
+                <div class="product-grid">
+                    <div class="text-center">
+                        <img src="public/products/L1pro8.webp" alt="L1 PRO 8" class="w-full h-20 object-contain mb-2 rounded">
+                        <p class="text-xs font-semibold text-gray-700">L1 PRO 8</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="public/products/Smart Ultra Soundbar.webp" alt="Smart Ultra Soundbar" class="w-full h-20 object-contain mb-2 rounded">
+                        <p class="text-xs font-semibold text-gray-700">Smart Ultra Soundbar</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="public/products/IZA2120.webp" alt="IZA2120" class="w-full h-20 object-contain mb-2 rounded">
+                        <p class="text-xs font-semibold text-gray-700">IZA2120</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="public/products/DM8C_Flush.webp" alt="DM8C Flush" class="w-full h-20 object-contain mb-2 rounded">
+                        <p class="text-xs font-semibold text-gray-700">DM8C Flush</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="public/products/ZA250.webp" alt="ZA250" class="w-full h-20 object-contain mb-2 rounded">
+                        <p class="text-xs font-semibold text-gray-700">ZA250</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="public/products/Smart Ultra Caisson 700.webp" alt="Smart Ultra Caisson 700" class="w-full h-20 object-contain mb-2 rounded">
+                        <p class="text-xs font-semibold text-gray-700">Smart Ultra Caisson 700</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Contactez-Nous</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div>
+                        <p class="font-semibold text-gray-700">📞 Téléphone</p>
+                        <p class="text-gray-600">+212 600 051 612</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-700">💬 WhatsApp</p>
+                        <p class="text-gray-600">+212 600 051 612</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-700">📧 Email</p>
+                        <p class="text-gray-600">contact@mediaprestige.ma</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signature Section -->
+            <div class="mt-8">
+                <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Signature</h3>
+                <div class="border-t border-gray-400 pt-4">
+                    <p class="text-sm text-gray-600 mb-2">Nom et Signature :</p>
+                    <div class="flex justify-between items-end">
+                        <div class="flex-1 border-b border-gray-400 mr-4"></div>
+                        <div class="text-xs text-gray-500">Date</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="yellow-gradient p-4 text-center">
+            <p class="text-black font-semibold">Équipement premium Bose / JBL • Installation experte • Service professionnel</p>
+            <p class="text-black text-sm mt-1">© 2025 MEDIA PRESTIGE — Tous droits réservés</p>
+        </div>
+    </div>
+
+    <!-- Instructions for converting to PNG -->
+    <div class="mt-8 text-center text-gray-600 max-w-2xl mx-auto">
+        <h3 class="text-lg font-semibold mb-2">Comment convertir en PNG :</h3>
+        <p class="text-sm">1. Ouvrez ce fichier HTML dans votre navigateur</p>
+        <p class="text-sm">2. Utilisez Ctrl+P (ou Cmd+P sur Mac) pour imprimer</p>
+        <p class="text-sm">3. Sélectionnez "Enregistrer au format PDF" ou utilisez un outil en ligne pour convertir HTML vers PNG</p>
+        <p class="text-sm">4. Ou utilisez un outil comme Puppeteer pour générer l'image automatiquement</p>
+    </div>
+</body>
+</html>

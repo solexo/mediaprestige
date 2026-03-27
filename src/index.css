@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slow-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 6s ease-in-out infinite;
+}
+
+@keyframes slow-bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-slow-bounce {
+  animation: slow-bounce 3s infinite;
+}
+
+.hero-section {
+  height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .hero-section {
+    height: 100dvh;
+  }
+}
+
+/* 3D Perspective for Animated Product Bar */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Hide scrollbar for animated product bar */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
