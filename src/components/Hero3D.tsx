@@ -30,7 +30,7 @@ const Hero3D = () => {
         </h1>
         <div className="text-center">
           <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-6 font-orbitron">
-            Importateur et spécialiste de marques d'exception telles que JBL, Bose, Sonos et Yamaha. Nous concevons des expériences sonores sur mesure pour les professionnels et les particuliers exigeants.
+            Importateur et spécialiste de marques JBL, Bose, Sonos et Yamaha. Nous concevons des expériences sonores sur mesure pour les professionnels et les particuliers exigeants.
           </p>
           <button
             onClick={() => {
