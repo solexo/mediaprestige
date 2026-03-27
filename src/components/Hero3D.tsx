@@ -4,7 +4,7 @@ const Hero3D = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="home" className="relative hero-section flex items-start md:items-center justify-center bg-black overflow-hidden pt-20 md:pt-0">
+    <section id="home" className="relative hero-section flex items-center justify-center bg-black overflow-hidden pt-20 md:pt-0 min-h-screen">
       <video
         className="absolute inset-0 w-full h-full object-cover hidden md:block will-change-auto"
         autoPlay
