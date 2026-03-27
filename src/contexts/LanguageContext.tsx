@@ -18,7 +18,7 @@ const translations = {
     about: 'À Propos',
     contact: 'Contact',
     heroTitle: 'MEDIA PRESTIGE',
-    heroSubtitle: '',
+    heroSubtitle: 'Importateur et spécialiste de marques d\'exception telles que JBL, Bose, Sonos et Yamaha. Nous concevons des expériences sonores sur mesure pour les professionnels et les particuliers exigeants.',
     heroDescription: '',
     viewProducts: 'Voir les produits',
     requestQuote: 'Demander un devis',
@@ -68,6 +68,7 @@ const translations = {
     partnerBrands: 'Marques Partenaires',
     backToHome: 'Retour à l\'accueil',
     privacyNotice: 'Ce site ne suit pas les utilisateurs, ne collecte aucune donnée et assure la protection de votre vie privée.',
+    heroValueProposition: 'Solutions audio professionnelles haut de gamme pour vos espaces',
   },
   en: {
     home: 'Home',
@@ -78,7 +79,7 @@ const translations = {
     about: 'About',
     contact: 'Contact',
     heroTitle: 'MEDIA PRESTIGE',
-    heroSubtitle: 'Premium Professional Audio Solutions',
+    heroSubtitle: 'Importer and specialist of exceptional brands such as JBL, Bose, Sonos and Yamaha. We design tailor-made sound experiences for demanding professionals and individuals.',
     heroDescription: '',
     viewProducts: 'View Products',
     requestQuote: 'Request a Quote',
@@ -113,6 +114,7 @@ const translations = {
     whatsappMessage2: 'Please send me more information.',
     whatsappBuyMessage: 'Hello, I am interested in buying',
     whatsappQuoteMessage: 'Hello, I would like to request a quote for',
+    inStock: 'IN STOCK',
     contactSubject: 'Contact from Media Prestige website',
     contactBodyPrefix: 'Name: ',
     contactBodyEmail: 'Email: ',
@@ -127,6 +129,7 @@ const translations = {
     partnerBrands: 'Partner Brands',
     backToHome: 'Back to Home',
     privacyNotice: 'This site does not track users, collects no data, and ensures your privacy is protected.',
+    heroValueProposition: 'Premium professional audio solutions for your spaces',
   },
 };
 

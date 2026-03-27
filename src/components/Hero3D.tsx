@@ -4,7 +4,7 @@ const Hero3D = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="home" className="relative hero-section flex items-start md:items-center justify-center bg-black overflow-hidden pt-20 md:pt-0">
+    <section id="home" className="relative hero-section flex flex-col justify-between bg-black overflow-hidden pt-20 md:pt-28 pb-16 md:pb-32">
       <video
         className="absolute inset-0 w-full h-full object-cover hidden md:block will-change-auto"
         autoPlay
@@ -24,24 +24,28 @@ const Hero3D = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80" />
 
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      {/* Title at the top */}
+      <div className="relative z-10 w-full text-center px-6 sm:px-6 lg:px-8 pt-8 md:pt-16">
+        <h1 className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl font-orbitron font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
+          {t('heroValueProposition')}
+        </h1>
       </div>
 
-      <div className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 animate-slow-bounce">
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-400"
+      {/* Description and CTA at the bottom */}
+      <div className="relative z-10 w-full text-center px-6 sm:px-6 lg:px-8">
+        <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl font-orbitron font-light tracking-wide max-w-3xl mx-auto leading-relaxed mb-8">
+          {t('heroSubtitle')}
+        </p>
+        <button
+          onClick={() => {
+            const message = t('whatsappQuoteMessage');
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/212600051612?text=${encodedMessage}`, '_blank');
+          }}
+          className="bg-white hover:bg-gray-100 text-black font-orbitron font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm"
         >
-          <path
-            d="M12 5V19M12 19L5 12M12 19L19 12"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+          {t('requestQuote')}
+        </button>
       </div>
     </section>
   );

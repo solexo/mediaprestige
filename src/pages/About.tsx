@@ -20,42 +20,36 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
-              {t('aboutTitle')}
+              À propos de nous
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full" />
           </div>
 
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-white via-gray-50 to-white backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-gray-200/50 shadow-2xl">
-              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-12 text-center">
-                Media Prestige est un importateur et distributeur spécialisé dans le matériel de sonorisation et audiovisuel haut de gamme. Nous proposons nos produits en gros, semi-gros et détail.
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+                Media Prestige est un distributeur spécialisé en solutions audio premium. Nous proposons nos produits en gros, semi-gros et détail.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="flex flex-col items-center text-center group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-yellow-500/50">
-                    <Award size={36} className="text-black" />
-                  </div>
-                  <h3 className="text-black font-bold text-xl mb-2">Premium Quality</h3>
-                  <p className="text-gray-600 text-sm">Bose & JBL Official Partners</p>
-                </div>
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+                Media Prestige Maarif incarne l'excellence dans l'univers du son haut de gamme au Maroc. Basés à Casablanca, nous sommes distributeur spécialisé d'équipements audio premium, sélectionnés parmi les marques les plus prestigieuses au monde telles que JBL, Bose, Sonos et Yamaha.
+              </p>
 
-                <div className="flex flex-col items-center text-center group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-yellow-500/50">
-                    <Users size={36} className="text-black" />
-                  </div>
-                  <h3 className="text-black font-bold text-xl mb-2">Expert Team</h3>
-                  <p className="text-gray-600 text-sm">Professional Audio Specialists</p>
-                </div>
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+                Animés par une exigence de qualité absolue, nous proposons des solutions audio alliant performance acoustique, design raffiné et innovation technologique. Chaque produit que nous distribuons est choisi avec rigueur pour offrir une expérience sonore immersive, répondant aux standards les plus élevés.
+              </p>
 
-                <div className="flex flex-col items-center text-center group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-yellow-500/50">
-                    <Sparkles size={36} className="text-black" />
-                  </div>
-                  <h3 className="text-black font-bold text-xl mb-2">Luxury Service</h3>
-                  <p className="text-gray-600 text-sm">Tailored to Your Needs</p>
-                </div>
-              </div>
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+                Notre équipe met son expertise au service d'une clientèle exigeante, en offrant un accompagnement personnalisé, du conseil à l'installation.
+              </p>
+
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+                Media Prestige Maarif, c'est bien plus qu'un distributeur : c'est une signature, une référence pour les passionnés de son d'exception.
+              </p>
+
+              <p className="text-gray-800 text-xl md:text-2xl font-bold text-center mt-12">
+                L'art du son, à son plus haut niveau.
+              </p>
             </div>
           </div>
 
