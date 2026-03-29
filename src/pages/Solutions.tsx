@@ -10,7 +10,7 @@ const Solutions = () => {
       <section className="py-20 bg-gradient-to-b from-teal-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Partenariats</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Professionnels</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full" />
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Rejoignez notre réseau de partenaires et travaillez avec nous sur des projets de sonorisation professionnelle.</p>
           </div>

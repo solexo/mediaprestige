@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Hero3D from '../components/Hero3D';
+import CustomerSegments from '../components/CustomerSegments';
 import Products from '../components/Products';
 import Footer from '../components/Footer';
 import AnimatedProductBar from '../components/AnimatedProductBar';
@@ -31,6 +32,7 @@ const Home = () => {
       <Header />
 
       <Hero3D />
+      <CustomerSegments />
       <Products />
       <AnimatedProductBar />
       
@@ -59,7 +61,7 @@ const Home = () => {
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Adapté à vos projets</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Votre Projet</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
           </div>
 
@@ -158,7 +160,7 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-b from-teal-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Partenariats</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-4 font-orbitron">Professionnels</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto rounded-full" />
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Rejoignez notre réseau de partenaires : commerciaux freelances, architectes, paysagistes et professionnels du secteur.</p>
           </div>

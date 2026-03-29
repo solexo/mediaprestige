@@ -4,7 +4,7 @@ const Hero3D = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="home" className="relative hero-section flex items-center justify-center bg-black overflow-hidden pt-20 md:pt-0 min-h-screen">
+    <section id="home" className="relative hero-section flex items-center justify-center bg-black overflow-hidden pt-24 md:pt-32 min-h-screen">
       <video
         className="absolute inset-0 w-full h-full object-cover hidden md:block will-change-auto"
         autoPlay
@@ -24,13 +24,13 @@ const Hero3D = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80" />
 
-      <div className="relative z-10 flex flex-col justify-between h-full px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto py-20">
-        <h1 className="text-white text-lg sm:text-xl md:text-2xl font-orbitron font-light tracking-wide leading-relaxed text-center">
-          Solutions audio professionnelles haut de gamme pour vos espaces
-        </h1>
+      <div className="relative z-10 flex flex-col items-center justify-start px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto pt-80 pb-20">
         <div className="text-center">
+          <h1 className="text-white text-lg sm:text-xl md:text-2xl font-orbitron font-light tracking-wide leading-relaxed text-center mb-0">
+            Le son premium, livré chez vous a casablanca
+          </h1>
           <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-6 font-orbitron">
-            Importateur et spécialiste de marques d'exception telles que JBL, Bose, Sonos et Yamaha. Nous concevons des expériences sonores sur mesure pour les professionnels et les particuliers exigeants.
+            Bose - JBL - Yamaha -Sonos -- Matériel audio haut de gamme pour votre maison, votre restaurant ou votre hôtel.
           </p>
           <button
             onClick={() => {
@@ -40,7 +40,7 @@ const Hero3D = () => {
             }}
             className="bg-white hover:bg-gray-100 text-black font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
-            Demander un devis
+            Parlez-nous de votre projet
           </button>
         </div>
       </div>

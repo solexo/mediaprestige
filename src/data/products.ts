@@ -1,5 +1,3 @@
-import { ShoppingCart, MessageCircle, Play } from 'lucide-react';
-
 export interface Product {
   id: string;
   name: string;
@@ -8,6 +6,7 @@ export interface Product {
   image: string;
   type?: string;
   typeFr?: string;
+  segment: 'residential' | 'professional' | 'portable';
 }
 
 export const products: Product[] = [
@@ -19,6 +18,7 @@ export const products: Product[] = [
     image: '/products/L1pro8.webp',
     type: 'Portable System',
     typeFr: 'Système Portable',
+    segment: 'portable',
   },
   {
     id: 'l1-pro16',
@@ -27,6 +27,7 @@ export const products: Product[] = [
     descriptionEn: 'Bose L1 Pro16 system for exceptional performances',
     image: '/products/L1_Pro16.webp',
     type: 'Portable System',
+    segment: 'portable',
     typeFr: 'Système Portable',
   },
   {
@@ -36,6 +37,7 @@ export const products: Product[] = [
     descriptionEn: 'Bose Smart Ultra soundbar with Dolby Atmos',
     image: '/products/Smart Ultra Soundbar.webp',
     type: 'Soundbar',
+    segment: 'residential',
     typeFr: 'Barre de Son',
   },
   {
@@ -45,6 +47,7 @@ export const products: Product[] = [
     descriptionEn: 'Bose Smart Ultra 700 wireless high-performance subwoofer',
     image: '/products/Smart Ultra Caisson 700.webp',
     type: 'Subwoofer',
+    segment: 'residential',
     typeFr: 'Caisson de Basse',
   },
   {
@@ -53,6 +56,7 @@ export const products: Product[] = [
     descriptionFr: 'Module de basses Bose Acoustimass 3 pour home cinéma',
     descriptionEn: 'Bose Acoustimass 3 bass module for home theater',
     image: '/products/Caisson de Bass Acoustimass3.webp',
+    segment: 'residential',
     type: 'Subwoofer',
     typeFr: 'Caisson de Basse',
   },
@@ -62,6 +66,7 @@ export const products: Product[] = [
     descriptionFr: 'Amplificateur Bose IZA 2120-HZ 2x120W professionnel',
     descriptionEn: 'Bose IZA 2120-HZ professional 2x120W amplifier',
     image: '/products/IZA2120.webp',
+    segment: 'professional',
     type: 'Amplifier',
     typeFr: 'Amplificateur',
   },
@@ -70,6 +75,7 @@ export const products: Product[] = [
     name: 'ZA250',
     descriptionFr: 'Amplificateur Bose ZA 250-LA avec DSP intégré',
     descriptionEn: 'Bose ZA 250-LA amplifier with integrated DSP',
+    segment: 'professional',
     image: '/products/ZA250.webp',
     type: 'Amplifier',
     typeFr: 'Amplificateur',
@@ -79,6 +85,7 @@ export const products: Product[] = [
     name: 'DM8C Flush',
     descriptionFr: 'Haut-parleurs Bose DM8C d\'encastrément pour plafond',
     descriptionEn: 'Bose DM8C flush ceiling speakers',
+    segment: 'professional',
     image: '/products/DM8C_Flush.webp',
     type: 'Ceiling Speaker',
     typeFr: 'Plafonnier',
@@ -87,6 +94,7 @@ export const products: Product[] = [
     id: '251',
     name: '251',
     descriptionFr: 'Haut-parleurs Bose 251 environnementaux',
+    segment: 'professional',
     descriptionEn: 'Bose 251 environmental speakers',
     image: '/products/251.webp',
     type: 'Wall Speaker',
@@ -96,6 +104,7 @@ export const products: Product[] = [
     id: '360p-ec',
     name: '360P EC',
     descriptionFr: 'Haut-parleurs Bose 360P EC environnementaux 360 degrés',
+    segment: 'professional',
     descriptionEn: 'Bose 360P EC 360-degree environmental speakers',
     image: '/products/360P_EC.webp',
     type: 'Pool Speaker',
@@ -104,6 +113,7 @@ export const products: Product[] = [
   {
     id: 'bose-music-amplifier',
     name: 'Bose Music Amplifier',
+    segment: 'residential',
     descriptionFr: 'Amplificateur Bose Music pour installations audio',
     descriptionEn: 'Bose Music Amplifier for audio installations',
     image: '/products/Bose Music Amplifier.webp',
@@ -113,6 +123,7 @@ export const products: Product[] = [
   {
     id: 'dm2c',
     name: 'DM2C',
+    segment: 'professional',
     descriptionFr: 'Haut-parleurs Bose DM2C de plafond 2 voies',
     descriptionEn: 'Bose DM2C 2-way ceiling speakers',
     image: '/products/DM2C.webp',
@@ -121,6 +132,7 @@ export const products: Product[] = [
   },
   {
     id: 'dm3-flush',
+    segment: 'professional',
     name: 'DM3 Flush',
     descriptionFr: 'Haut-parleurs Bose DM3 d\'encastrément 3 voies',
     descriptionEn: 'Bose DM3 3-way flush speakers',
@@ -130,6 +142,7 @@ export const products: Product[] = [
   },
   {
     id: 'dm5-flush',
+    segment: 'professional',
     name: 'DM5 Flush',
     descriptionFr: 'Haut-parleurs Bose DM5 d\'encastrément 5 pouces',
     descriptionEn: 'Bose DM5 5-inch flush speakers',
@@ -138,6 +151,7 @@ export const products: Product[] = [
     typeFr: 'Encastrable',
   },
   {
+    segment: 'residential',
     id: 'smart-sound-bar',
     name: 'Smart Sound Bar',
     descriptionFr: 'Barre de son Bose Smart avec connectivité multi-room',
@@ -154,6 +168,7 @@ export const products: Product[] = [
     image: '/products/FS2C.webp',
     type: 'Wall Speaker',
     typeFr: 'Murale',
+    segment: 'professional',
   },
   {
     id: 'satellite-flush',
@@ -163,6 +178,7 @@ export const products: Product[] = [
     image: '/products/Satellite_flush.webp',
     type: 'In-Wall',
     typeFr: 'Encastrable',
+    segment: 'professional',
   },
   {
     id: 'caisson-de-bass-flush',
@@ -172,6 +188,7 @@ export const products: Product[] = [
     image: '/products/Caisson de bass flush.webp',
     type: 'Subwoofer',
     typeFr: 'Caisson de Basse',
+    segment: 'professional',
   },
   {
     id: 'fs2se',
@@ -181,6 +198,7 @@ export const products: Product[] = [
     image: '/products/FS2SE.webp',
     type: 'Wall Speaker',
     typeFr: 'Murale',
+    segment: 'professional',
   },
   {
     id: 'acoustimass',
@@ -190,5 +208,6 @@ export const products: Product[] = [
     image: '/products/Acoustimass.webp',
     type: 'Subwoofer',
     typeFr: 'Caisson de Basse',
+    segment: 'professional',
   },
 ];
