@@ -11,7 +11,7 @@ interface LanguageContextType {
 const translations = {
   fr: {
     home: 'Accueil',
-    products: 'Produits',
+    products: 'Nos produits',
     categories: 'Votre Projet',
     services: 'Services',
     solutions: 'Professionnels',
